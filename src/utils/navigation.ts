@@ -7,7 +7,7 @@ const navBarLinks = [
   { name: "Contact", url: "/contact" },
 ];
 // An array of links for footer
-const footerLinks = [
+// const footerLinks = [
   // {
   //   section: "Ecosystem",
   //   links: [
@@ -25,7 +25,7 @@ const footerLinks = [
   //     { name: "Customers", url: "#" },
   //   ],
   // },
-];
+// ];
 // An object of links for social icons
 const socialLinks = {
   facebook: "https://www.facebook.com/",
@@ -37,6 +37,6 @@ const socialLinks = {
 
 export default {
   navBarLinks,
-  footerLinks,
+  // footerLinks,
   socialLinks,
 };
