@@ -10,12 +10,12 @@ import TestimonialsSection from "@/components/sections/testimonials/Testimonials
 import PricingSection from "@/components/sections/pricing/PricingSection.astro";
 import FAQ from "@/components/sections/FAQ.astro";
 import AnnouncementBanner from "@/components/ui/banners/AnnouncementBanner.astro";
-import heroImage from "@/images/hero-image.avif";
 import faqs from "@/data_files/faqs.json";
 import features from "@/data_files/features.json";
 import pricing from "@/data_files/pricing.json";
 import featureImage from "@/images/features-image.avif";
 import construction from "@/images/construction-image.avif";
+import plane from "@/images/plane.jpg"
 import tools from "@/images/automated-tools.avif";
 import dashboard from "@/images/dashboard-image.avif";
 
@@ -28,18 +28,19 @@ const avatarSrcs: Array<string> = [
 ---
 
 <MainLayout>
-  <AnnouncementBanner
+  <!-- <AnnouncementBanner
     btnId="dismiss-button"
-    btnTitle="Explore ScrewFast on GitHub"
+    btnTitle="Explore our product on GitHub"
     url="https://github.com/mearashadowfax/ScrewFast"
-  />
+  /> -->
 
   <HeroSection
-    title=`Equip Your Projects with <span
-        class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>`
-    subTitle="Top-quality hardware tools and expert construction services for every project need."
+    title=`The fastest way to develop <span
+        class="text-yellow-500 dark:text-yellow-400">safety-critical software.</span>`
+    subTitle=""
     primaryBtn="Start Exploring"
-    primaryBtnURL="/products"
+    primaryBtnURL=""
+    primaryBtnOnClick={true}
     secondaryBtn="Contact Sales Team"
     secondaryBtnURL="/contact"
     withReview={true}
@@ -47,56 +48,49 @@ const avatarSrcs: Array<string> = [
     rating=`<span class="font-bold">4.8</span> / 5`
     starCount={4}
     reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
-    src={heroImage}
-    alt="Stack of ScrewFast product boxes containing assorted hardware tools"
+    alt="animation displaying the process of developing software"
   />
 
-  <ClientsSection
+  <!-- <ClientsSection
     title="Trusted by Industry Leaders"
     subTitle="Experience the reliability chosen by industry giants."
-  />
+  /> -->
 
   <FeaturesGeneral
-    title="Meeting Industry Demands"
-    subTitle="At ScrewFast, we tackle the unique challenges encountered in the hardware and construction sectors. From cutting-edge tools to expert services, we're dedicated to helping you overcome obstacles and achieve your goals."
+    title="Our Products"
+    subTitle="Developing safety-critical software is slow and expensive.  We provide a fully integrated suite of tools that uses advanced AI code generation to increase your teams velocity while ensuring compliance."
     src={featureImage}
-    alt="ScrewFast products in floating boxes"
+    alt="Precision QA products in floating boxes"
     features={features}
   />
 
   <FeaturesNavs
-    title=`Customize <span class="text-yellow-500 dark:text-yellow-400">ScrewFast</span>'s offerings to perfectly suit your hardware and construction needs.`
+    title=`Bring your software to market 10x faster with AI-powered development tools.`
     tabs={[
       {
-        heading: "Cutting-Edge Tools",
+        heading: "Generate Requirements from Source Code",
         content:
-          "Empower your projects with ScrewFast's cutting-edge tools. Experience enhanced efficiency in construction management with our sophisticated automated solutions.",
-        svg: "tools",
-        src: tools,
-        alt: "Yellow and black heavy equipment on brown grass field",
+          "Use the latest LLMs to generate requirements from source code and tests at the touch of a button.",
+        svg: "books",
+        src: "https://www.youtube.com/embed/3PgYZM0t-NY?si=4EUFX83gNAU-6ve0",
+        embedded: true,
+        alt: "",
         first: true,
       },
       {
-        heading: "Intuitive Dashboards",
+        heading: "Generate and run tests using source code and existing requirements",
         content:
-          "Navigate with ease using ScrewFast's intuitive dashboards. Set up and oversee your projects seamlessly, with user-friendly interfaces designed for quick and effective workflow management.",
-        svg: "dashboard",
-        src: dashboard,
-        alt: "A screenshot or graphic representation of the intuitive dashboard",
+          "With one command, you can autogenerate tests from souce code and existing requirements, create a test enviroment, and verify the tests are passing.",
+        svg: "verified",
+        src: "https://www.youtube.com/embed/JWaZUgFmpQw?si=C1evVhZlpEA55r0O",
+        embedded: true,
         second: true,
-      },
-      {
-        heading: "Robust Features",
-        content:
-          "Minimize complexity, maximize productivity. ScrewFast's robust features are engineered to streamline your construction process, delivering results that stand out for their excellence.",
-        svg: "house",
-        src: construction,
-        alt: "Gray metal building frame near tower crane during daytime",
+        alt: "",
       },
     ]}
   />
 
-  <TestimonialsSection
+  <!-- <TestimonialsSection
     title="Fast-Track Your Projects"
     subTitle="At ScrewFast, we ensure a swift start with instant account setup. Experience the speed of construction redefined."
     ;
@@ -131,15 +125,15 @@ const avatarSrcs: Array<string> = [
         description: "quicker assembly using innovative fastening solutions",
       },
     ]}
-  />
+  /> -->
 
-  <PricingSection pricing={pricing} />
+  <!-- <PricingSection pricing={pricing} /> -->
 
   <FAQ title="Frequently<br />asked questions" faqs={faqs} />
 
   <HeroSectionAlt
     title="Let's Build Together"
-    subTitle="ScrewFast is an open-source template, meticulously crafted with Astro, Tailwind CSS, and Preline UI frameworks."
-    url="https://github.com/mearashadowfax/ScrewFast"
+    subTitle="We tailor powerful software tools for your unique needs. Reach out to discuss your solution!"
+    url="/contact"
   />
 </MainLayout>

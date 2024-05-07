@@ -16,6 +16,7 @@ interface Tab {
   alt: string;
   first?: boolean;
   second?: boolean;
+  embedded?: boolean;
 }
 
 // Define TypeScript interface for props
@@ -72,6 +73,7 @@ interface Props {
                   alt={tab.alt}
                   first={tab.first}
                   second={tab.second}
+                  embedded={tab.embedded}
                 />
               ))
             }

@@ -1,22 +1,22 @@
 [
   {
-    "heading": "Dedicated Teams",
-    "content": "Benefit from our committed teams who ensure your success is personal. Count on expert guidance and exceptional results throughout your project journey.",
-    "svg": "groups"
+    "heading": "AI-powered test generation and requirements linking",
+    "content": "TestGen™, our AI-powered test generation tool, can automatically generate test cases from requirements and/or source code.",
+    "svg": "tools"
   },
   {
-    "heading": "Simplicity and Affordability",
-    "content": "Find easy-to-use, affordable solutions with ScrewFast's line of tools and equipment. Our products make procurement simple and keep projects within budget.",
+    "heading": "Code coverage analysis",
+    "content": "AutoCov™ analyzes your code and reports statement, branch, and MC/DC coverage, it can also use that feedback to generate coverage where it's needed and ignore where it's not.",
     "svg": "verified"
   },
   {
-    "heading": "Comprehensive Documentation",
-    "content": "Integrate with ease using ScrewFast's exhaustive guides and libraries. Achieve seamless product adoption with our full suite of documentation designed for your success.",
+    "heading": "Requirements management",
+    "content": "Simple spreadsheets don't cut it. DOORS and Jama cost thousands. PrecisionQA's Reqcreate™ Excel add-in transforms Excel into the worlds most powerful requirements management system.",
     "svg": "books"
   },
   {
-    "heading": "User-Centric Design",
-    "content": "Experience the difference with ScrewFast's user-focused design — where functionality meets practicality for an enhanced work experience.",
-    "svg": "frame"
+    "heading": "Custom AI configurations",
+    "content": "Need a custom solution? Our team can help you setup and configure a private cloud modal or on-premise solution that meets your security requirements.",
+    "svg": "cloud"
   }
 ]
